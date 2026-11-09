@@ -4,192 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae - Felix</title>
+    <!-- External Stylesheet for CSS Exercise -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ==================== HEADER: PERSONAL INFO & PHOTO (CV FORMAT) ==================== -->
-    <table width="100%" border="0" cellpadding="10" cellspacing="0">
-        <tr>
-            <td valign="top" width="75%">
+    <main class="container">
+
+        <!-- ==================== HEADER: PERSONAL INFO & PHOTO ==================== -->
+        <header class="header-section">
+            <div class="profile-info">
                 <h1>FELIX</h1>
                 <h3>Web Developer &amp; Computer Science Student</h3>
-                <p>
-                    <b>Email:</b> <a href="mailto:u6632736@au.edu">u6632736@au.edu</a><br>
-                    <b>Phone:</b> +66 (0) 8X-XXX-XXXX<br>
-                    <b>Location:</b> Bangkok, Thailand<br>
-                    <b>GitHub:</b> <a href="https://github.com/FrezAmt666" target="_blank">github.com/FrezAmt666</a>
-                </p>
-            </td>
-            <td align="right" valign="top" width="25%">
-                <img src="public/images/myimage.png" alt="Profile Photo of Felix" width="160" height="160" border="1">
-            </td>
-        </tr>
-    </table>
+                <div class="contact-info">
+                    <p>
+                        <b>Email:</b> <a href="mailto:u6632736@au.edu">u6632736@au.edu</a><br>
+                        <b>Phone:</b> +66 (0) 8X-XXX-XXXX<br>
+                        <b>Location:</b> Bangkok, Thailand<br>
+                        <b>GitHub:</b> <a href="https://github.com/FrezAmt666" target="_blank">github.com/FrezAmt666</a>
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="public/images/myimage.png" alt="Profile Photo of Felix" class="profile-photo">
+            </div>
+        </header>
 
-    <hr size="3" color="#000000">
+        <!-- ==================== SECTION 1: PROFESSIONAL SUMMARY ==================== -->
+        <section>
+            <h2>Professional Summary</h2>
+            <p>
+                Enthusiastic and detail-oriented Computer Science and Web Development student with a strong passion 
+                for building clean, functional, and user-friendly web applications. Currently developing a solid foundation 
+                in web standards, modern CSS styling, software engineering principles, and version control workflows.
+            </p>
+        </section>
 
-    <!-- ==================== SECTION 1: PROFESSIONAL SUMMARY (ABOUT ME) ==================== -->
-    <section>
-        <h2>PROFESSIONAL SUMMARY</h2>
-        <p>
-            Enthusiastic and detail-oriented Computer Science and Web Development student with a strong passion 
-            for building clean, functional, and user-friendly web applications. Currently developing a solid foundation 
-            in web standards, software engineering principles, and version control workflows. Eager to apply practical 
-            programming skills to solve real-world problems and collaborate in creative team environments.
-        </p>
-    </section>
+        <!-- ==================== SECTION 2: EDUCATION ==================== -->
+        <section>
+            <h2>Education</h2>
+            <div class="item-card">
+                <div class="item-header">
+                    <span>Bachelor of Science in Computer Science / Information Technology</span>
+                    <span>2023 &ndash; Present</span>
+                </div>
+                <div class="item-sub">
+                    <span>Assumption University of Thailand</span>
+                    <span>Bangkok, Thailand</span>
+                </div>
+                <ul class="custom-list">
+                    <li><b>Relevant Coursework:</b> Web Application Development, Object-Oriented Programming, Data Structures, Computer Networks.</li>
+                </ul>
+            </div>
+        </section>
 
-    <hr>
+        <!-- ==================== SECTION 3: CORE SKILLS (TABLE WITH RANKINGS) ==================== -->
+        <section>
+            <h2>Technical &amp; Core Skills</h2>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th class="text-center" width="8%">#</th>
+                        <th width="32%">Skill / Technology</th>
+                        <th width="26%">Category</th>
+                        <th class="text-center" width="18%">Proficiency</th>
+                        <th class="text-center" width="16%">Ranking</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">1</td>
+                        <td><b>HTML5 &amp; CSS3</b></td>
+                        <td>Frontend Web Development</td>
+                        <td class="text-center"><span class="badge">Intermediate</span></td>
+                        <td class="text-center"><span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (4/5)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">2</td>
+                        <td><b>Git &amp; GitHub</b></td>
+                        <td>Version Control &amp; CI/CD</td>
+                        <td class="text-center"><span class="badge">Intermediate</span></td>
+                        <td class="text-center"><span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (4/5)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">3</td>
+                        <td><b>Python</b></td>
+                        <td>Programming &amp; Scripting</td>
+                        <td class="text-center"><span class="badge">Intermediate</span></td>
+                        <td class="text-center"><span class="rating-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span> (3/5)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">4</td>
+                        <td><b>JavaScript</b></td>
+                        <td>Frontend Web Development</td>
+                        <td class="text-center"><span class="badge">Beginner</span></td>
+                        <td class="text-center"><span class="rating-stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span> (2/5)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">5</td>
+                        <td><b>Problem Solving &amp; Logic</b></td>
+                        <td>Core Competency</td>
+                        <td class="text-center"><span class="badge">Advanced</span></td>
+                        <td class="text-center"><span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> (4/5)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">6</td>
+                        <td><b>Teamwork &amp; Communication</b></td>
+                        <td>Interpersonal Skills</td>
+                        <td class="text-center"><span class="badge">Advanced</span></td>
+                        <td class="text-center"><span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> (5/5)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <!-- ==================== SECTION 2: EDUCATION ==================== -->
-    <section>
-        <h2>EDUCATION</h2>
-        <table width="100%" border="0" cellpadding="4" cellspacing="0">
-            <tr>
-                <td><b>Bachelor of Science in Computer Science / Information Technology</b></td>
-                <td align="right"><b>2023 &ndash; Present</b></td>
-            </tr>
-            <tr>
-                <td><i>Assumption University of Thailand</i></td>
-                <td align="right">Bangkok, Thailand</td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <ul>
-                        <li><b>Relevant Coursework:</b> Web Application Development, Object-Oriented Programming, Data Structures, Computer Networks.</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </section>
+        <!-- ==================== SECTION 4: PROJECTS ==================== -->
+        <section>
+            <h2>Academic &amp; Personal Projects</h2>
+            <div class="item-card">
+                <div class="item-header">
+                    <span>Personal Profile Webpage</span>
+                    <span>2026</span>
+                </div>
+                <div class="item-sub">
+                    <span>Web Application Development Hands-on</span>
+                    <span>HTML5 &amp; CSS3</span>
+                </div>
+                <ul class="custom-list">
+                    <li>Engineered a responsive, structured CV personal profile webpage following modern semantic web standards.</li>
+                    <li>Designed an external CSS stylesheet incorporating flexbox layout, custom typography, and responsive media queries.</li>
+                </ul>
+            </div>
+        </section>
 
-    <hr>
+        <!-- ==================== SECTION 5: HOBBIES & INTERESTS ==================== -->
+        <section>
+            <h2>Hobbies &amp; Interests</h2>
+            <ul class="custom-list">
+                <li><b>Web &amp; Software Development:</b> Exploring web frameworks, open-source projects, and tinkering with new dev tools.</li>
+                <li><b>Photography &amp; Visual Arts:</b> Street photography, framing urban landscapes, and photo editing.</li>
+                <li><b>Gaming &amp; Strategy:</b> Playing tactical strategy games, RPGs, and cooperative multiplayer challenges.</li>
+                <li><b>Music &amp; Podcasts:</b> Enjoying lo-fi beats, indie music, and listening to software engineering podcasts.</li>
+                <li><b>Reading &amp; Continuous Learning:</b> Reading technology articles, coding documentation, and sci-fi literature.</li>
+            </ul>
+        </section>
 
-    <!-- ==================== SECTION 3: CORE SKILLS (TABLE WITH RANKINGS) ==================== -->
-    <section>
-        <h2>TECHNICAL &amp; CORE SKILLS</h2>
-        <table border="1" cellpadding="8" cellspacing="0" width="100%">
-            <thead>
-                <tr bgcolor="#e0e0e0">
-                    <th align="center" width="8%">#</th>
-                    <th align="left" width="32%">Skill / Technology</th>
-                    <th align="left" width="25%">Category</th>
-                    <th align="center" width="20%">Proficiency</th>
-                    <th align="center" width="15%">Ranking</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td align="center">1</td>
-                    <td><b>HTML5</b></td>
-                    <td>Frontend Web Development</td>
-                    <td align="center">Intermediate</td>
-                    <td align="center">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
-                </tr>
-                <tr>
-                    <td align="center">2</td>
-                    <td><b>Git &amp; GitHub</b></td>
-                    <td>Version Control &amp; Collaboration</td>
-                    <td align="center">Intermediate</td>
-                    <td align="center">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
-                </tr>
-                <tr>
-                    <td align="center">3</td>
-                    <td><b>Python</b></td>
-                    <td>Programming &amp; Scripting</td>
-                    <td align="center">Intermediate</td>
-                    <td align="center">&#9733;&#9733;&#9733;&#9734;&#9734; (3/5)</td>
-                </tr>
-                <tr>
-                    <td align="center">4</td>
-                    <td><b>JavaScript</b></td>
-                    <td>Frontend Web Development</td>
-                    <td align="center">Beginner</td>
-                    <td align="center">&#9733;&#9733;&#9734;&#9734;&#9734; (2/5)</td>
-                </tr>
-                <tr>
-                    <td align="center">5</td>
-                    <td><b>Problem Solving &amp; Logic</b></td>
-                    <td>Core Competency</td>
-                    <td align="center">Advanced</td>
-                    <td align="center">&#9733;&#9733;&#9733;&#9733;&#9734; (4/5)</td>
-                </tr>
-                <tr>
-                    <td align="center">6</td>
-                    <td><b>Teamwork &amp; Communication</b></td>
-                    <td>Interpersonal Skills</td>
-                    <td align="center">Advanced</td>
-                    <td align="center">&#9733;&#9733;&#9733;&#9733;&#9733; (5/5)</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <!-- ==================== SECTION 6: LANGUAGES ==================== -->
+        <section>
+            <h2>Languages</h2>
+            <table class="skills-table" style="max-width: 450px;">
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th class="text-center">Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Thai</b></td>
+                        <td class="text-center"><span class="badge">Native</span></td>
+                    </tr>
+                    <tr>
+                        <td><b>English</b></td>
+                        <td class="text-center"><span class="badge">Professional Working</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <hr>
+        <!-- ==================== FOOTER ==================== -->
+        <footer>
+            <p>&copy; 2026 Felix &bull; Web Application Development Course &bull; Hosted on GitHub Pages</p>
+        </footer>
 
-    <!-- ==================== SECTION 4: PROJECTS ==================== -->
-    <section>
-        <h2>ACADEMIC &amp; PERSONAL PROJECTS</h2>
-        <ul>
-            <li>
-                <b>Personal Profile Webpage (Pure HTML)</b> &ndash; <i>2026</i><br>
-                Designed a structured CV profile web page adhering strictly to HTML semantic markup and standards without CSS or JavaScript.
-            </li>
-            <br>
-            <li>
-                <b>Web Application Development Lab Project</b> &ndash; <i>2026</i><br>
-                Collaborated using Git and GitHub for version control, repository setup, and continuous deployment through GitHub Pages.
-            </li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- ==================== SECTION 5: HOBBIES & INTERESTS ==================== -->
-    <section>
-        <h2>HOBBIES &amp; INTERESTS</h2>
-        <ul>
-            <li><b>Web &amp; Software Development:</b> Exploring web frameworks, open-source projects, and tinkering with new dev tools.</li>
-            <li><b>Photography &amp; Visual Arts:</b> Street photography, framing urban landscapes, and photo editing.</li>
-            <li><b>Gaming &amp; Strategy:</b> Playing tactical strategy games, RPGs, and cooperative multiplayer challenges.</li>
-            <li><b>Music &amp; Podcasts:</b> Enjoying lo-fi beats, indie music, and listening to software engineering podcasts.</li>
-            <li><b>Reading &amp; Continuous Learning:</b> Reading technology articles, coding documentation, and sci-fi literature.</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <!-- ==================== SECTION 6: LANGUAGES ==================== -->
-    <section>
-        <h2>LANGUAGES</h2>
-        <table border="1" cellpadding="6" cellspacing="0" width="50%">
-            <thead>
-                <tr bgcolor="#f5f5f5">
-                    <th align="left">Language</th>
-                    <th align="center">Proficiency</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><b>Thai</b></td>
-                    <td align="center">Native</td>
-                </tr>
-                <tr>
-                    <td><b>English</b></td>
-                    <td align="center">Professional Working Proficiency</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-
-    <hr size="2" color="#000000">
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer>
-        <p align="center">
-            <small>&copy; 2026 Felix &bull; Built with pure HTML5 for Web App Development Course</small>
-        </p>
-    </footer>
+    </main>
 
 </body>
 </html>
